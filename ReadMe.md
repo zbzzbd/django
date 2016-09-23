@@ -1,5 +1,5 @@
 ###django
-是一个开放源代码的WEB应用框架，由PYTHON携程
+是一个开放源代码的WEB应用框架，由PYTHON撰写
 #####1.django-admin.py startproject testdj 创建一个testdj项目
 #####2.python manage.py runserver 运行启动项目
 #####3.urls.py 这个文件起到路由的作用，view.py主要是服务器response处理逻辑使用，templates主要是模板
