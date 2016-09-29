@@ -25,7 +25,10 @@ urlpatterns = [
 from django.conf.urls import url
 from testdj.view import hello
 from learn.views import *
+import people.views
 from django.contrib import admin
+
+admin.autodiscover()
 
 urlpatterns =[url(r'^hello/',hello),
               url(r'^admin/', admin.site.urls),
@@ -33,7 +36,8 @@ urlpatterns =[url(r'^hello/',hello),
               url(r'^add/$',add,name='add'),
               url(r'^add/(\d+)/(\d+)/$',add2,name='add2'),
               url(r'^index/$',index,name='home'),
-              url(r'^string',string,name='string')
+              url(r'^string',string,name='string'),
+              url(r'^index1$',people.views.index1,name='home2')
 
               ]
 
